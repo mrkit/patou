@@ -1,5 +1,17 @@
 body {
   background: url(/images/backgroundweb.jpg) no-repeat center center fixed;
+  margin: 0;
 }
 
+.container {
+  width: 100%;
+  height: 40rem;
+  display: grid;
+  grid-template-rows: 3fr 3fr;
+}
 
+main {
+  background: rgba(0, 0, 0, 0.53);
+  margin: 0;
+  height: 30rem;
+}

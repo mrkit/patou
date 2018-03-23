@@ -5,7 +5,7 @@ const e = require('express'),
       bp = require('body-parser');
 
 
-a.use(e.static(r(__dirname, '..', 'client', 'public')));
+a.use([e.static(r(__dirname, '..', 'client', 'public')), m('dev'), bp.json(), bp.urlencoded({ extended: true })]);
 
 a.get('/', (req, res, next) => res.sendFile(__dirname, '..', 'client', 'public', 'index.html'));
 
