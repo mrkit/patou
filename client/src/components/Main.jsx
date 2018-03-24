@@ -6,7 +6,10 @@ export default class Main extends Component {
   render(){
     return (
       <main>
-        <h2>That's a debate</h2>
+        <article>
+          <h2>Ma Mere!</h2>
+          <p>Under construction!</p>
+        </article>
       </main>
     )
   }
